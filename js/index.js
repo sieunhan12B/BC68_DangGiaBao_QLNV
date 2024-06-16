@@ -95,7 +95,8 @@ function renderArrNhanVien(arr = arrNhanVien) {
         <td>${newArrNhanVien.xepLoai()}</td>
         <td>
         <button onclick="deleteNhanVien('${tknv}')" class="btn btn-success">Xóa</button>
-        <button onclick="getInfoNhanVien('${tknv}')" class="btn btn-danger">Sửa</button>
+        <button onclick="getInfoNhanVien('${tknv}')" class="btn btn-danger " data-toggle="modal"
+									data-target="#myModal">Sửa</button>
         
     
         </td>

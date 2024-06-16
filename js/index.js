@@ -53,7 +53,7 @@ function getValueForm() {
       isValid &= checkLuongCoBan(value, errField, 1000000, 20000000);
     }
     if (check && id == "gioLam") {
-      isValid &= checkLuongCoBan(value, errField, 80, 200);
+      isValid &= checkGiolam(value, errField, 80, 200);
     }
   }
   if (isValid) {

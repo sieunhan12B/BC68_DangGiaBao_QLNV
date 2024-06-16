@@ -89,3 +89,14 @@ function checkLuongCoBan(value, errField, min, max) {
     return false;
   }
 }
+
+//Kiểm tra số giờ làm
+function checkGiolam(value, errField, min, max) {
+  if (min <= value && value <= max) {
+    errField.innerHTML = "";
+    return true;
+  } else {
+    errField.innerHTML = `Vui lòng nhập số giờ làm  từ ${min} đến ${max}`;
+    return false;
+  }
+}

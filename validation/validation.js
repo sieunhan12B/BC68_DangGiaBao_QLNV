@@ -45,7 +45,7 @@ function checkNameValue(value, errorField) {
     errorField.innerHTML = "";
     return true;
   } else {
-    errorField.innerHTML = "Vui lòng nhập đúng định dạng tên";
+    errorField.innerHTML = "Tên nhân viên phải là chữ";
     return false;
   }
 }
@@ -59,7 +59,8 @@ function checkPassWordValue(value, errorField) {
     errorField.innerHTML = "";
     return true;
   } else {
-    errorField.innerHTML = "Vui lòng nhập đúng định dạng password";
+    errorField.innerHTML =
+      "Chứa ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt";
     return false;
   }
 }
@@ -73,7 +74,7 @@ function checkDateValue(value, errorField) {
     errorField.innerHTML = "";
     return true;
   } else {
-    errorField.innerHTML = "Vui lòng nhập đúng định dạng ngày";
+    errorField.innerHTML = "Định dạng mm/dd/yyyy";
     return false;
   }
 }
